@@ -25,7 +25,7 @@ function ParentInfo=IBSI_IntensityVolumeHistogram_Category(CDataSetInfo, Mode, P
 CDataSetInfo = IBSI_waterCTnumber(CDataSetInfo);
 
 %[~, ImgVector_d, G, X_d, X_gl_d] = IBSI_IVH_gl_rescale(CDataSetInfo, Param);
-keyboard
+
 [CDataSetInfo, Param] = IBSI_gl_rescale(CDataSetInfo, Param);
 ImgVector_d = double(CDataSetInfo.ROIImageInfo.MaskData(CDataSetInfo.ROIBWInfo.MaskData == 1));
 G = Param.G;
