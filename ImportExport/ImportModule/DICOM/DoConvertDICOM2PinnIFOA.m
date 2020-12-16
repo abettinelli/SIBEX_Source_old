@@ -2198,7 +2198,7 @@ for i=1:RowNum
             TempData(:, 3)=-TempData(:, 3);
         end
 
-        TempCurvePoint=cellstr(num2str(TempData), 10); %Bettinelli '%.10f'
+        TempCurvePoint=cellstr(num2str(TempData, 10)); %Bettinelli '%.10f'
 
         TempROISection=[TempROISection; TempCurveStart; TempCurvePoint; TempCurveEnd];
     end
